@@ -6,7 +6,7 @@ name: CICD-Workshop
 # events but only for the master branch
 on:
   push:
-  branches: [ main ]
+    branches: [ main ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -21,7 +21,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Setup Node.js environment
-    uses: actions/setup-node@v2-beta
+      uses: actions/setup-node@v2-beta
       with:
         version: 18
 
